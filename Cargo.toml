@@ -10,10 +10,10 @@ keywords = ["candle", "lstm", "pytorch"]
 
 
 [dependencies]
-candle-core = "0.7.0"
-candle-nn = "0.7.0"
-candle-metal-kernels = {version = "0.7.0", optional = true}
-candle-kernels = {version = "0.7.0", optional = true}
+candle-core = { git = "https://github.com/huggingface/candle.git", rev = "db08cc0a" }
+candle-nn = { git = "https://github.com/huggingface/candle.git", rev = "db08cc0a" }
+candle-metal-kernels = { git = "https://github.com/huggingface/candle.git", rev = "db08cc0a", optional = true}
+candle-kernels = { git = "https://github.com/huggingface/candle.git", rev = "db08cc0a", optional = true}
 
 [dev-dependencies]
 anyhow = "1.0.86"
